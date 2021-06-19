@@ -7,6 +7,13 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     text-decoration: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html{
+    scroll-behavior: smooth;
   }
   
   body{
@@ -43,8 +50,13 @@ const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.1875rem;
-    margin-bottom: 20px;
+    margin: 0 auto 30px;
+    max-width: 700px;
     text-align: center;
+  }
+
+  .separator-top{
+    margin-top: 48px;
   }
 `;
 

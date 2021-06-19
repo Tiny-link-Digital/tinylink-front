@@ -1,5 +1,6 @@
-import Header from "components/header";
 import { ThemeProvider } from "styled-components";
+import Header from "components/header";
+import Footer from "components/footer";
 
 import GlobalStyle from "styles/globals";
 
@@ -20,6 +21,7 @@ function MyApp({ Component, pageProps }) {
       <GlobalStyle />
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   );
 }

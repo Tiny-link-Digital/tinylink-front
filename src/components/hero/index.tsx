@@ -20,7 +20,9 @@ export default function Hero({
 }: HeroProps) {
   return (
     <Container>
-      <h1 className="title">{title}</h1>
+      <h1 id="gerar_link" className="title">
+        {title}
+      </h1>
       {subtitle && <h2 className="subtitle">{subtitle}</h2>}
       <p className="paragraph">{description}</p>
 

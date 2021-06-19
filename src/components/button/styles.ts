@@ -1,4 +1,5 @@
-import styled, { css } from "styled-components";
+import Link from "next/link";
+import styled from "styled-components";
 
 export const Container = styled.button`
   border: 2px solid transparent;
@@ -11,7 +12,7 @@ export const Container = styled.button`
   line-height: 1.0625rem;
   margin: auto;
   min-width: 200px;
-  padding: 17px 25px 16px;
+  padding: 17px 48px 16px;
   text-align: center;
   text-transform: uppercase;
   transition: all 300ms ease-in-out;
@@ -42,4 +43,11 @@ export const Container = styled.button`
     font-size: 18px;
     min-width: 365px;
   }
+`;
+
+export const ComponentLink = styled(Container)`
+  display: block;
+  font-weight: 500;
+  margin: 0 auto 30px;
+  max-width: 350px;
 `;
